@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesquisa de Satisfação - Comunidade Tech</title>
+</head>
+
+<body>
+
+  <h1 id="title">Pesquisa de Experiência do Desenvolvedor</h1>
+
+  <p id="description">Sua opinião é fundamental para evoluirmos nossa comunidade de aprendizado.</p>
+
+  <form id="survey-form">
+
+    <div>
+      <label id="name-label" for="name">Nome completo:</label>
+      <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+    </div>
+
+    <div>
+      <label id="email-label" for="email">Endereço de e-mail:</label>
+      <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+    </div>
+
+    <div>
+      <label id="number-label" for="number">Idade (opcional):</label>
+      <input type="number" id="number" name="age" min="13" max="120" placeholder="Ex: 24">
+    </div>
+
+    <div>
+      <label for="dropdown">Qual opção descreve melhor sua ocupação principal?</label>
+      <select id="dropdown" name="role">
+        <option value="" disabled selected>Selecione uma opção</option>
+        <option value="student">Estudante</option>
+        <option value="full-time-job">Trabalho em tempo integral</option>
+        <option value="full-time-learner">Estudante em tempo integral</option>
+        <option value="prefer-not-to-say">Prefiro não responder</option>
+        <option value="other">Outro</option>
+      </select>
+    </div>
+
+    <div>
+      <p>Você recomendaria nossa plataforma para um colega?</p>
+      <label>
+        <input type="radio" name="recommendation" value="definitely" checked> Com certeza
+      </label>
+      <label>
+        <input type="radio" name="recommendation" value="maybe"> Talvez
+      </label>
+      <label>
+        <input type="radio" name="recommendation" value="not-sure"> Não tenho certeza
+      </label>
+    </div>
+
+
+    <div>
+      <p>Quais áreas você gostaria de ver mais conteúdos? (Marque todas que se aplicam)</p>
+      <label>
+        <input type="checkbox" name="topics" value="frontend"> Projetos Front-End
+      </label>
+      <label>
+        <input type="checkbox" name="topics" value="backend"> Desenvolvimento Back-End
+      </label>
+      <label>
+        <input type="checkbox" name="topics" value="data-vis"> Visualização de Dados
+      </label>
+      <label>
+        <input type="checkbox" name="topics" value="open-source"> Projetos de Código Aberto
+      </label>
+      <label>
+        <input type="checkbox" name="topics" value="community"> Eventos da Comunidade
+      </label>
+    </div>
+
+
+    <div>
+      <label for="comments">Comentários ou sugestões de melhoria:</label>
+      <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Escreva suas ideias aqui..."></textarea>
+    </div>
+
+    <div>
+      <button type="submit" id="submit">Enviar Formulário</button>
+    </div>
+
+  </form>
+
+</body>
+
+</html>
