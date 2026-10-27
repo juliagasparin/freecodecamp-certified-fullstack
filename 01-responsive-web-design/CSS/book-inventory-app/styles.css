@@ -1,0 +1,135 @@
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: #f4f1fa;
+  color: #2b2b3a;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #4a2c7a;
+}
+
+table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+th {
+  padding: 12px;
+  color: #ffffff;
+  background-image: linear-gradient(#7b4fc4, #4a2c7a);
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(#d6f5dc, #a8e6b4);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(#fde0e0, #f7b3b3);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(#fff1cc, #ffd98a);
+}
+
+span {
+  display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 2px solid #b02a2a;
+  background-image: linear-gradient(#ff7a7a, #d63a3a);
+}
+
+tr[class="read"] span[class="status"] {
+  border: 2px solid #1f7a35;
+  background-image: linear-gradient(#6fe08a, #2fa84f);
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 2px solid #b87a00;
+  background-image: linear-gradient(#ffd666, #f0a500);
+}
+
+span[class="status"], span[class^="rate"] {
+  height: 24px;
+  width: 110px;
+  padding: 2px;
+  border-radius: 14px;
+  line-height: 24px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+span[class^="rate"], span[class="status"] {
+  height: 24px;
+  width: 110px;
+  padding: 2px;
+}
+
+span[class^="rate"] > span {
+  border: 2px solid #8a7a3a;
+  border-radius: 50%;
+  margin: 0 3px;
+  height: 16px;
+  width: 16px;
+  padding: 0;
+  background-color: #eeeeee;
+}
+
+span[class~="one"] span:first-child {
+  background-image: linear-gradient(#ffe680, #f2b800);
+}
+
+span[class~="one"] > span:first-child {
+  background-image: linear-gradient(#ffe680, #f2b800);
+}
+
+span[class~="one"] :first-child {
+  background-image: linear-gradient(#ffe680, #f2b800);
+}
+
+span[class~="one"] > :first-child {
+  background-image: linear-gradient(#ffe680, #f2b800);
+}
+
+span[class~="one"] span:nth-child(1) {
+  background-image: linear-gradient(#ffe680, #f2b800);
+}
+
+span[class~="one"] span:first-of-type {
+  background-image: linear-gradient(#ffe680, #f2b800);
+}
+
+span[class~="two"] span:nth-child(-n + 2) {
+  background-image: linear-gradient(#ffe680, #f2b800);
+}
+
+span[class~="two"] > span:nth-child(-n + 2) {
+  background-image: linear-gradient(#ffe680, #f2b800);
+}
+
+span[class*="two"] span:nth-child(-n + 2) {
+  background-image: linear-gradient(#ffe680, #f2b800);
+}
+
+span[class~="three"] span {
+  background-image: linear-gradient(#ffe680, #f2b800);
+}
+
+span[class~="three"] > span {
+  background-image: linear-gradient(#ffe680, #f2b800);
+}
+
+span[class*="three"] span {
+  background-image: linear-gradient(#ffe680, #f2b800);
+}
